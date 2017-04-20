@@ -1,23 +1,20 @@
-package test1;
-
-import java.util.HashMap;
-import java.util.HashSet;
+package test1.math;
 
 /**
  * Created by 1100383 on 2017. 4. 10..
  */
 
 
-class Solution {
+class Solution5 {
 /////////////
 
 
 ////////////
 }
 
-public class DefaultMain {
+public class BaseconversionExcelColumnNumber {
     public static void main(String[] arg) {
-        Solution sol = new Solution();
+        Solution5 sol = new Solution5();
 
         System.out.println(sol);
     }

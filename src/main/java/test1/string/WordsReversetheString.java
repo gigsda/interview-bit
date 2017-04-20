@@ -1,45 +1,33 @@
 package test1.string;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.ListIterator;
+
 /**
  * Created by 1100383 on 2017. 4. 10..
  */
 
 
 class Solution9 {
-/////////////
-public String reverseWords(String a) {
-    a.trim();
+    /////////////
+    public String reverseWords(String a) {
+        a.trim();
 
-    char res[] = new char[a.length()];
-    int k = 0;
-    int stats = 1;
-    String re = "";
+        List<String> al = Arrays.asList(a.split(" "));
+        ListIterator li = al.listIterator(al.size());
 
-    for (int i = 0;i < a.length(); i++){
+        StringBuilder sb = new StringBuilder();
+        while (li.hasPrevious()) {
+            String x = li.previous().toString();
+            if (x.compareTo("") == 0)
+                continue;
 
-        if (a.charAt(i) == ' ' &&stats == 0) {
-            continue;
-        }
-        if (a.charAt(i) == ' ' &&stats == 1){
-
-            re = new StringBuilder(new String(res).substring(0,k).trim()).toString()+' '+re;
-            stats = 0;
-            k=0;
-            continue;
+            sb.append(x + " ");
         }
 
-        if (a.charAt(i) != ' ')
-            res[k++] = a.charAt(i);
-
-        stats = 1;
-
+        return sb.toString().trim();
     }
-    if (k > 0)
-        re = new StringBuilder(new String(res).substring(0,k).trim()).toString()+' '+re;
-
-
-    return new String(re).trim();
-}
 
 ////////////
 }
@@ -47,11 +35,8 @@ public String reverseWords(String a) {
 public class WordsReversetheString {
     public static void main(String[] arg) {
         Solution9 sol = new Solution9();
-        System.out.println(sol.reverseWords(""));
-        System.out.println(sol.reverseWords("bl12"));
 
-        System.out.println(sol.reverseWords("the sky is blue"));
-        System.out.println(sol.reverseWords("the sky is blue  "));
-        System.out.println(sol.reverseWords("  the  sky is    blue"));
+
+        System.out.println(sol.reverseWords("  the  sky is    blue   "));
     }
 }
