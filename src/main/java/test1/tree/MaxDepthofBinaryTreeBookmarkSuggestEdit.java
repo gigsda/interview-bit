@@ -6,15 +6,7 @@ import java.util.HashSet;
  * Created by 1100383 on 2017. 4. 10..
  */
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    TreeNode(int x) {
-        val = x;
-    }
-}
 
 class Solution {
     /////////////
