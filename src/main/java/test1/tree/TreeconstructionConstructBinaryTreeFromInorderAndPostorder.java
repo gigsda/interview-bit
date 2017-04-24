@@ -7,7 +7,7 @@ import java.util.*;
  */
 
 
-class Solution10 {
+class Solution14 {
 /////////////
 
     Stack<Integer> st;
@@ -42,7 +42,7 @@ class Solution10 {
 
 public class TreeconstructionConstructBinaryTreeFromInorderAndPostorder {
     public static void main(String[] arg) {
-        Solution10 sol = new Solution10();
+        Solution14 sol = new Solution14();
 
      //    TreeNode node =  (sol.buildTree(
        //         new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9)), new ArrayList<>(Arrays.asList(1, 3, 5, 4, 2, 8, 9, 7, 6))));
