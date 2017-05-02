@@ -1,6 +1,6 @@
 package test1.tree;
 
-import java.util.HashSet;
+import test1.TreeNode;
 
 /**
  * Created by 1100383 on 2017. 4. 10..

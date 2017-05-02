@@ -1,5 +1,8 @@
 package test1.Graphs;
 
+
+import test1.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -9,15 +12,6 @@ import java.util.Queue;
  */
 
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
 
 class Solution {
 
